@@ -1,0 +1,132 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+    font-size:2vw; 
+    background-color:seagreen;
+}
+.Titre {
+    font-family: Georgia, serif;
+    font-size:24px;
+    text-align: center;
+    padding: 10px;
+    margin: 6px 0px 6px 0px;
+    background-color:springgreen;
+    color: black;
+}
+.Menu {
+    height: 42px;
+    margin: 8px 0px 8px 0px;
+}
+.Cadre {
+    border-radius: 14px;
+}
+.PiedPage {
+    font-size:12px;
+    text-align: left;
+    padding: 2px 6px 2px 6px;
+    background-color:springgreen;
+    color: black;
+    margin: 8px 0px 0px 0px;
+}
+/*===== GESTION DES INFO BULLES ====*/
+.InfoBulle{
+    visibility: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    background-color:wheat;
+    color: black;
+    position: absolute;
+    font-family: Georgia, serif;
+    font-size:12px;
+    padding: 4px 8px;
+    z-index: 1;
+}
+.Info:hover .InfoBulle{
+    visibility: visible;
+}
+/*===== DEFINITION POUR LE DETAIL ET SES LIGNES ====*/
+.Detail{
+    background-color:springgreen;
+    width:auto;
+}
+.Detail1 .Ligne:nth-child(2n+2){
+    background-color:khaki;
+}
+.Detail1 .Ligne:nth-child(2n){
+    background-color:aquamarine;
+}
+.Detail .ligne{
+    margin: 4px 0px 4px 0px;
+    background-color:khaki;
+}
+.ListeTitre {
+    background-color:springgreen;
+    text-align: center;
+    font-weight: bold;
+    height: 26px;
+}
+.IconeVisu{
+    grid-column: 1;
+    justify-self:flex-end;
+}
+/*===== DEFINITION LISTE JOUEUR ====*/
+.JoueurDef{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 32px 180px 50px 90px 90px 50px 100%;
+    padding: 0x 0px 0px 0px;
+    column-gap: 4px;
+    align-items:center;
+}
+.LstJoueurNom{
+    grid-column: 2;
+}
+.LstJoueurEmailErr{
+    grid-column: 3;
+}
+.LstJoueurMaitre{
+    grid-column: 4;
+    background-color: darkseagreen;
+}
+.LstJoueurTable{
+    grid-column: 5;
+    background-color: darkslateblue;
+}
+/*===== DEFINITION LISTE CAMPAGNE ====*/
+.CampagneDef{
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 32px 180px 100px 28px 160px 28px 70px 90px 50px 100%;
+    padding: 0x 0px 0px 0px;
+    column-gap: 4px;
+    align-items:center;
+}
+.LstCampagneNom{
+    grid-column: 2;
+}
+.LstCampagneJDR{
+    grid-column: 3;
+}
+.LstCampagneTypeErr{
+    grid-column: 4;
+}
+.LstCampagneMaitre{
+    grid-column: 5;
+}
+.LstCampagneEmailErr{
+    grid-column: 6;
+    justify-self: center;
+}
+.LstCampagneJoueur{
+    grid-column: 7;
+    text-align: center;
+}
+/*===== DEFINITION DES FENETRES MODAL ====*/
+.FenetreModal{
+    font-family: Georgia, serif;
+    font-size:14px;
+}
+.SaisieChaine{
+    width:250px;
+}
